@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Gradient Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text y=%22.9em%22 font-size=%2216%22>🎨</text></svg>">
+</head>
+<body>
+  <main>
+    <h1>🎨 Gradient Generator</h1>
+    <div class="preview" id="previewBox"></div>
+
+    <div class="controls">
+      <div class="row">
+        <label>Color 1: <input type="color" id="color1" value="#ff7e5f" /></label>
+        <label>Color 2: <input type="color" id="color2" value="#feb47b" /></label>
+      </div>
+
+      <div class="row">
+        <label>Direction:
+          <select id="direction">
+            <option value="to right">To Right</option>
+            <option value="to left">To Left</option>
+            <option value="to bottom">To Bottom</option>
+            <option value="to top">To Top</option>
+            <option value="45deg">45°</option>
+            <option value="135deg">135°</option>
+          </select>
+        </label>
+
+        <label>
+          Type:
+          <select id="gradientType">
+            <option value="linear-gradient">Linear</option>
+            <option value="radial-gradient">Radial</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row buttons">
+        <button id="generateBtn">🔀 Random</button>
+        <button id="copyBtn">📋 Copy CSS</button>
+      </div>
+
+      <div class="output">
+        <code id="cssOutput">background: linear-gradient(to right, #ff7e5f, #feb47b);</code>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
